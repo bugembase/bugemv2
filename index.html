@@ -3,240 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GENERATOR AKUN MLBB BY BUGEM TEAM</title>
+  <title>Coming Soon - Bugem Team</title>
   <style>
     body {
-      background-color: #1540c1;
+      background-color: #0b3d91;
       color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
+      text-align: center;
     }
-    input, button {
-      padding: 10px;
-      font-size: 16px;
-      width: 80%;
-      max-width: 300px;
-      margin: 10px auto;
-      display: block;
-      border-radius: 6px;
-      border: none;
-    }
-    button {
-      background-color: #00cc66;
-      color: white;
-      cursor: pointer;
-    }
-    .judul-kedip {
-      color: yellow;
-      animation: kedip 1s infinite;
-    }
-    .info-rainbow {
-      font-weight: bold;
-      animation: rainbow 2s infinite;
-      margin-top: 10px;
-    }
-    .coin-box {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    .generator-container {
-      background-color: #1f3bd3;
-      border-radius: 12px;
+    .text-container {
+      font-size: 24px; /* Ukuran sedang */
+      font-weight: bold; /* Tulisan tebal */
       padding: 20px;
-      margin: 15px auto;
-      width: 80%;
-      max-width: 400px;
-    }
-    .generate-button {
-      animation: pulse 2s infinite, floating 3s ease-in-out infinite;
-    }
-    .loading-bar {
-      width: 0%;
-      height: 6px;
-      background-color: #00ff88;
-      margin-top: 5px;
-      transition: width 60s linear;
-      border-radius: 4px;
-    }
-    @keyframes kedip { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-    @keyframes rainbow {
-      0% { color: red; } 20% { color: orange; } 40% { color: yellow; }
-      60% { color: lime; } 80% { color: cyan; } 100% { color: magenta; }
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0px rgba(255,255,255,0.3); }
-      50% { box-shadow: 0 0 15px rgba(255,255,255,0.6); }
-      100% { box-shadow: 0 0 0px rgba(255,255,255,0.3); }
-    }
-    @keyframes floating {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-      100% { transform: translateY(0); }
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
     }
   </style>
 </head>
 <body>
-
-<div id="loginPage">
-  <h2>Login untuk mengakses Generator</h2>
-  <input type="text" id="username" placeholder="Username">
-  <input type="password" id="password" placeholder="Password">
-  <button onclick="login()">Login</button>
-  <p id="loginError" style="color: yellow;"></p>
-  <p>Belum punya akun? <a href="#" onclick="showRegister()">Daftar di sini</a></p>
-</div>
-
-<div id="registerPage" style="display:none;">
-  <h2>Daftar Akun Baru</h2>
-  <input type="text" id="newUsername" placeholder="Username baru">
-  <input type="password" id="newPassword" placeholder="Password baru">
-  <button onclick="register()">Daftar</button>
-  <p id="registerMessage" style="color: yellow;"></p>
-  <p><a href="#" onclick="showLogin()">Kembali ke login</a></p>
-</div>
-
-<div id="mainPage" style="display:none;">
-  <img src="LOGO-BT.png" alt="Logo BUGEM" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid white; margin-top: 20px;" />
-  <h2 class="judul-kedip">⏱ GENERATOR AKUN MLBB BY BUGEM TEAM</h2>
-  <p class="info-rainbow">INFORMASI: WEBSITE INI VIP DAN DILARANG MENJUALBELIKAN TANPA IZIN ❗</p>
-  <div class="coin-box">💰 Koin kamu: <span id="coinDisplay">0</span></div>
-
-  <div class="generator-container">
-    <button class="generate-button" onclick="useCoin('out1', akun1, 'btn1', 'bar1')" id="btn1">Generator 1 No Info Akun</button>
-    <div class="loading-bar" id="bar1"></div>
-    <p id="out1">Data akun:</p>
+  <div class="text-container">
+    WEB INI SEDANG UPDATE<br>
+    COMING SOON<br>
+    MOHON BERSABAR 🙏
   </div>
-
-  <div class="generator-container">
-    <button class="generate-button" onclick="useCoin('out2', akun2, 'btn2', 'bar2')" id="btn2">Generator 2 Level 10-30</button>
-    <div class="loading-bar" id="bar2"></div>
-    <p id="out2">Data akun:</p>
-  </div>
-
-  <div class="generator-container">
-    <button class="generate-button" onclick="useCoin('out3', akun3, 'btn3', 'bar3')" id="btn3">Generator 3 Level 40-60</button>
-    <div class="loading-bar" id="bar3"></div>
-    <p id="out3">Data akun:</p>
-  </div>
-
-  <div class="generator-container">
-    <button class="generate-button" onclick="useCoin('out4', akun4, 'btn4', 'bar4')" id="btn4">Generator 4 Level 70-90</button>
-    <div class="loading-bar" id="bar4"></div>
-    <p id="out4">Data akun:</p>
-  </div>
-
-  <div class="generator-container">
-    <button class="generate-button" onclick="useCoin('out5', akun5, 'btn5', 'bar5')" id="btn5">Generator 5 Level 100+</button>
-    <div class="loading-bar" id="bar5"></div>
-    <p id="out5">Data akun:</p>
-  </div>
-
-  <div style="margin-top: 30px;">
-    <a href="https://wa.me/6287786226500?text=HALO_CS_BUGEM_STORE" target="_blank">
-      <button style="padding: 12px 24px; font-size: 16px; background-color: #25D366; color: white; border: none; border-radius: 8px; cursor: pointer;">
-        💬 Hubungi CS via WhatsApp
-      </button>
-    </a>
-  </div>
-</div>
-
-<script>
-  const akun1 = [
-    "mohdasyraaf6@gmail.com:Mohdasyraaf06",
-    "gpanitan1994@gmail.com:Ortigas2022",
-    "gamersxcool7@gmail.com:Aswd1122",
-    "bernardparizki.w@gmail.com:Papoymamoy1",
-    "jjeorbita773@gmail.com:Wadrigidaww"
-  ];
-  const akun2 = [
-    "brayou74@gmail.com:Black973509 | Lvl:18",
-    "hunterfire2005@gmail.com:Hunter2005 | Lvl:15"
-  ];
-  const akun3 = [
-    "pangsmahal16@gmail.com:Ikawplayan1 | Lvl:55",
-    "vladichucho@gmail.com:Vladichucho132 | Lvl:63",
-    "areebsajjad113@gmail.com:Mafiajoker123 | Lvl:58",
-    "maafyan@gmail.com:Sahabat123 | Lvl:63",
-    "lordwalleihatake@gmail.com:YAsuo123 | Lvl:60"
-  ];
-  const akun4 = [
-    "andiaril186@gmail.com:Kistarapi12345 | Lvl:85",
-    "pzjzhsodnjx@gmail.com:Ppsspp123 | Lvl:82",
-    "denysonferreira@outlook.com:Dfeh4br4 | Lvl:87",
-    "buildit911@gmail.com:JemelDyroth333 | Lvl:92",
-    "mhayarenio98@gmail.com:May161996 | Lvl:78"
-  ];
-  const akun5 = [
-    "cagayjerry30@gmail.com:Jerrymamaidcagay30 | Lvl:107",
-    "thestrongriki@gmail.com:20September1992 | Lvl:123",
-    "firmansyahwatirata1@gmail.com:Firman123 | Lvl:141",
-    "giovanoakbar9@gmail.com:Badut01 | Lvl:113",
-    "Yuniar.cps@gmail.com:Merindukanmu1 | Lvl:109"
-  ];
-
-  let currentUser = "";
-
-  function showRegister() {
-    document.getElementById("loginPage").style.display = "none";
-    document.getElementById("registerPage").style.display = "block";
-  }
-  function showLogin() {
-    document.getElementById("registerPage").style.display = "none";
-    document.getElementById("loginPage").style.display = "block";
-  }
-  function register() {
-    const user = document.getElementById("newUsername").value;
-    const pass = document.getElementById("newPassword").value;
-    if (user && pass) {
-      localStorage.setItem(user, JSON.stringify({ password: pass, coin: 0 }));
-      document.getElementById("registerMessage").innerText = "Akun berhasil dibuat! Silakan login.";
-    } else {
-      document.getElementById("registerMessage").innerText = "Isi semua kolom.";
-    }
-  }
-  function login() {
-    const user = document.getElementById("username").value;
-    const pass = document.getElementById("password").value;
-    const data = JSON.parse(localStorage.getItem(user));
-    if (data && data.password === pass) {
-      currentUser = user;
-      data.coin = (data.coin || 0) + 5;
-      localStorage.setItem(user, JSON.stringify(data));
-      document.getElementById("coinDisplay").innerText = data.coin;
-      document.getElementById("loginPage").style.display = "none";
-      document.getElementById("mainPage").style.display = "block";
-    } else {
-      document.getElementById("loginError").innerText = "Username atau password salah!";
-    }
-  }
-  function useCoin(outId, list, btnId, barId) {
-    const data = JSON.parse(localStorage.getItem(currentUser));
-    const out = document.getElementById(outId);
-    const btn = document.getElementById(btnId);
-    const bar = document.getElementById(barId);
-
-    if (data.coin > 0) {
-      data.coin--;
-      localStorage.setItem(currentUser, JSON.stringify(data));
-      document.getElementById("coinDisplay").innerText = data.coin;
-
-      out.innerText = "⏳ Mengambil akun...";
-      btn.disabled = true;
-      bar.style.width = "100%";
-
-      setTimeout(() => {
-        const acak = list[Math.floor(Math.random() * list.length)];
-        out.innerText = "Data akun: " + acak;
-        btn.disabled = false;
-        bar.style.width = "0%";
-      }, 60000);
-    } else {
-      alert("Koin kamu tidak cukup!");
-    }
-  }
-</script>
-
 </body>
 </html>
