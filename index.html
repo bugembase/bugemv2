@@ -1,1 +1,51 @@
-halo
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesan Update</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .pesan {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      animation: warna-warni 2s infinite, scaleUp 3s infinite alternate, blink 1s step-start infinite;
+    }
+
+    @keyframes warna-warni {
+      0%   { color: red; }
+      25%  { color: yellow; }
+      50%  { color: lime; }
+      75%  { color: cyan; }
+      100% { color: magenta; }
+    }
+
+    @keyframes scaleUp {
+      0%   { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="pesan">
+    FULL EFEK DAN ANIMASI:<br>
+    MOHON WEBSITE UPDATE<br>
+    MOHON TUNGGU VERSI FINAL NYA
+  </div>
+</body>
+</html>
